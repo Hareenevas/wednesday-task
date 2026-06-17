@@ -1,29 +1,29 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useEffect } from "react";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Your App" },
-      { name: "description", content: "Replace this with a one-sentence description of your app." },
-      { property: "og:title", content: "Your App" },
-      { property: "og:description", content: "Replace this with a one-sentence description of your app." },
+      { title: "Wednesday — Nevermore Academy" },
+      { name: "description", content: "Enter the dark, gothic world of Wednesday Addams at Nevermore Academy." },
+      { property: "og:title", content: "Wednesday — Nevermore Academy" },
+      { property: "og:description", content: "Enter the dark, gothic world of Wednesday Addams at Nevermore Academy." },
     ],
   }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
+  // Redirect to the static gothic login page served from /public.
+  useEffect(() => {
+    window.location.replace("/login.html");
+  }, []);
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div style={{ minHeight: "100vh", backgroundColor: "#0a0a0a", color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "Georgia, serif" }}>
+      <noscript>
+        <a href="/login.html" style={{ color: "#fff" }}>Enter Nevermore →</a>
+      </noscript>
+      <p style={{ opacity: 0.6 }}>Entering Nevermore…</p>
     </div>
   );
 }

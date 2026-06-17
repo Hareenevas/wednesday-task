@@ -111,9 +111,9 @@ function isValidEmail(v) {
 
 // --- Page routing ----------------------------------------
 document.addEventListener("DOMContentLoaded", () => {
-  const path = (location.pathname.split("/").pop() || "index.html").toLowerCase();
+  const path = (location.pathname.split("/").pop() || "login.html").toLowerCase();
 
-  if (path === "" || path === "index.html") initLogin();
+  if (path === "" || path === "login.html") initLogin();
   else if (path === "register.html") initRegister();
   else if (path === "scene.html") initScene();
 });
