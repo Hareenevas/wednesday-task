@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nevermore — Login</title>
+  <meta name="description" content="Enter Nevermore Academy. A Wednesday-inspired gothic experience." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="page-login">
+  <main class="auth-shell fade-in">
+    <section class="auth-card">
+      <header class="auth-header">
+        <p class="eyebrow">Nevermore Academy</p>
+        <h1 class="title">Wednesday</h1>
+        <p class="subtitle">Sign in to enter the shadows.</p>
+      </header>
+
+      <form id="loginForm" class="form" novalidate>
+        <div class="field">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" autocomplete="username" placeholder="wednesday.addams" />
+          <small class="error" data-error-for="username"></small>
+        </div>
+
+        <div class="field">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" autocomplete="current-password" placeholder="••••••••" />
+          <small class="error" data-error-for="password"></small>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Enter Nevermore</button>
+      </form>
+
+      <p class="foot-note">"I find social media to be a soul-sucking void of meaningless affirmation."</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
