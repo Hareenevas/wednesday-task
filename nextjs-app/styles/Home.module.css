@@ -1,0 +1,18 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  font-size: 2rem;
+  color: #0070f3;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: #666;
+}
